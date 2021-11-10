@@ -2,7 +2,7 @@ import "./App.css";
 import ComponentFrame from "./components/componentFrame/ComponentFrame";
 import Header from "./components/header/Header/Header";
 import Bloomberg from "./components/Bloomberg";
-import Ocean from "./Ocean";
+import Ocean from "./components/Ocean/Ocean";
 
 function App() {
   const realList = [{
