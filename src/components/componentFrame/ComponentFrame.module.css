@@ -1,9 +1,11 @@
-.container {
-  margin: 8rem 16rem 8rem 16rem;
-  display: flex;
-  flex-direction: row;
-}
-
 .componentWrapper {
   margin: 4rem 8rem 4rem 8rem;
+  margin: 5px auto;
+  background: white;
+  height: 200px;
+  width: 300px;
+  border: solid green 1px;
+  border-radius: 5px;
+  color: black;
+  padding: 5px;
 }
