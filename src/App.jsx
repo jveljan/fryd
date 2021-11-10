@@ -29,9 +29,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <header className="header">FRYD Dashboard</header>
       <div className="main">
-        Boxes Area
         <div className="box-container">
           <ComponentFrame componentList={realList.filter(c => c.isSelected).map(c=>c.component)} />
         </div>
