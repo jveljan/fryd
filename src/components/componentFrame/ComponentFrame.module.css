@@ -1,0 +1,9 @@
+.container {
+  margin: 8rem 16rem 8rem 16rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.componentWrapper {
+  margin: 4rem 8rem 4rem 8rem;
+}
