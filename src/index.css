@@ -12,11 +12,23 @@ code {
     monospace;
 }
 
+.header {
+  text-align: left;
+  background: lightseagreen;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 1em;
+}
+.main {
+  border: solid lightseagreen 2px;
+  min-height: 600px;
+}
 .box {
   background: white;
   height: 300px;
   border: solid green 1px;
   border-radius: 5px;
   color: black;
-  padding: ;
+  padding: 5px;
 }
