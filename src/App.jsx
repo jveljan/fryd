@@ -1,5 +1,6 @@
 import "./App.css";
 import ComponentFrame from "./components/componentFrame/ComponentFrame";
+import Header from "./components/header/Header/Header";
 import Bloomberg from "./components/Bloomberg";
 function App() {
   const realList = [{
@@ -25,6 +26,7 @@ function App() {
   }]
   return (
     <div className="App">
+      <Header />
       <header className="header">FRYD Dashboard</header>
       <div className="main">
         Boxes Area
