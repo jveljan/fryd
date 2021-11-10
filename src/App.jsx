@@ -1,10 +1,12 @@
 import "./App.css";
 import ComponentFrame from "./components/componentFrame/ComponentFrame";
 import Bloomberg from "./components/Bloomberg";
+import Ocean from "./Ocean";
+
 function App() {
   const realList = [{
     componentName: '',
-    component: <div>Widget 1</div>,
+    component: <div><Ocean/></div>,
     isSelected: true
   }, {
     componentName: '',
