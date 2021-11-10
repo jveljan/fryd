@@ -1,0 +1,8 @@
+.dnbHeaderRight {
+  justify-self: flex-end;
+  grid-row: 2;
+
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: var(--spacing-medium);
+}

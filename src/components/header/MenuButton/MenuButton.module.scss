@@ -1,0 +1,64 @@
+.dnbMenuButton {
+  --spacing-xx-small: calc(var(--spacing-x-small) / 2);
+
+  justify-self: flex-start;
+  grid-row: 2;
+  margin: var(--spacing-small) 0;
+
+  flex-direction: column;
+  height: auto;
+
+  & > :global(.dnb-button__alignment) {
+    display: none;
+  }
+
+  &:global(.dnb-button.dnb-button--tertiary.dnb-button--has-icon.dnb-button--has-text) {
+    padding: 0;
+
+    & > .dnbButton__text {
+      // Overrides Eufemia, so must have high specificity
+      order: 3;
+    }
+  }
+
+  .dnbButton__text {
+    font-size: var(--font-size-x-small);
+    line-height: 100%;
+    padding: var(--spacing-x-small) 0 0 0;
+
+    &::after {
+      left: 0;
+    }
+  }
+
+  .dnbButton__text,
+  .dnbButton__icon {
+    margin: 0;
+  }
+
+  .dnbButton__icon-group {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    column-gap: var(--spacing-xx-small);
+
+    .dnbButton__icon {
+      padding: 0;
+    }
+  }
+
+  .dnbButton__badge {
+    padding: calc(var(--spacing-xx-small) / 2) var(--spacing-xx-small);
+    background-color: var(--color-accent-yellow-30);
+    border-radius: 0.25rem;
+    color: var(--color-black);
+    font-size: var(--font-size-x-small);
+    font-weight: var(--font-weight-medium);
+    line-height: 100%;
+  }
+
+  &:active:not([disabled]),
+  html:not([data-is-touch]) &:active:not([disabled]) {
+    color: var(--color-mint-green);
+  }
+}
