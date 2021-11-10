@@ -7,6 +7,8 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@dnb/eufemia": "^9.15.2",
+    "chart.js": "^3.6.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
