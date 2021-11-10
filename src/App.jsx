@@ -9,7 +9,19 @@ function App() {
   }, {
     componentName: '',
     component: <div>Widget 2</div>,
-    isSelected: false
+    isSelected: true
+  }, {
+    componentName: '',
+    component: <div>Widget 3</div>,
+    isSelected: true
+  }, {
+    componentName: '',
+    component: <div>Widget 4</div>,
+    isSelected: true
+  }, {
+    componentName: '',
+    component: <div>Widget 6</div>,
+    isSelected: true
   }]
   return (
     <div className="App">
