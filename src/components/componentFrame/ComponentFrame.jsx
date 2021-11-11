@@ -4,7 +4,7 @@ const ComponentFrame = ({ componentList }) => {
   return (
     <>
       {componentList.map((component) => (
-        <div className={styles.componentWrapper + ' ' + component.componentName}>{component.component}</div>
+        <div className={styles.componentWrapper + ' ' + component.componentClass}>{component.component}</div>
       ))}
     </>
   );
