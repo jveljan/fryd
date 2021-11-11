@@ -3,8 +3,11 @@ import styles from "./ComponentFrame.module.css";
 const ComponentFrame = ({ componentList }) => {
   return (
     <>
-      {componentList.map((component) => (
-        <div className={styles.componentWrapper + ' ' + component.componentClass}>{component.component}</div>
+      {componentList.map((c) => (
+        <div className={styles.componentWrapper + ' ' + c.className} key={c.title}>
+          <h2 className="title">{c.title}</h2>
+          {c.component}
+        </div>
       ))}
     </>
   );
