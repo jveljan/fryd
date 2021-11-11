@@ -1,20 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Line } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 import Slider from "@dnb/eufemia/components/Slider";
 
-
-const data = {
-  labels: ['1', '2', '3', '4', '5', '6'],
-  datasets: [
-    {
-      label: 'Interest rate',
-      data: [12, 19, 3, 5, 2, 3],
-      fill: false,
-      backgroundColor: 'rgb(255, 99, 132)',
-      borderColor: 'rgba(255, 99, 132, 0.2)',
-    },
-  ],
-};
 
 const options = {
   scales: {
@@ -24,18 +12,35 @@ const options = {
   }
 };
 
-const MyChart = () => (
-  <>
-    <Line data={data} options={options} />
-  </>
-);
+const MyChart = () => {
+  const [value, setvalue] = useState(7);
+  
+  const data = {
+    labels: ['mon', 'tue', 'wed', 'thu', 'fri'],
+    datasets: [
+      {
+        label: 'Interest rate forecast',
+        data: [Math.floor(Math.random() * value), Math.floor(Math.random() * value), Math.floor(Math.random() * value), Math.floor(Math.random() * value), Math.floor(Math.random() * value), Math.floor(Math.random() * value)],
+        fill: false,
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgba(255, 99, 132, 0.2)',
+      },
+    ],
+  };
 
-<Slider
+  return <>
+
+  <Slider
   min={0}
-  max={100}
-  value={70}
-  label="Default Slider:"
-  on_change={({ value }) => console.log('on_change:', value)}
+  max={12}
+  value={value}
+  on_change={({ value }) => setvalue(value)}// console.log('on_change:', valueasdf)}
 />
+    <Bar data={data} options={options} />
+  </>
+  
+};
+
+
 
 export default MyChart;
