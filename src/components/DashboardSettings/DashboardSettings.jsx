@@ -16,7 +16,7 @@ export const DashboardSettings = (props) => {
         <div>
           {items.map((item) => {
             return (
-              <div>
+              <div key={item.componentName}>
                 <Checkbox
                   label={item.componentName}
                   label_position="right"
