@@ -1,24 +1,29 @@
 import PictureComponent from "./components/pictureComponent/PictureComponent";
-import picture1 from './assets/picture1.png';
 import indexesPicture from "./assets/indexes.png";
-import finsightPicture from './assets/finsight.png'
+import finsightPicture from "./assets/finsight.png";
+import creditManagerPicture from "./assets/creditmanager.png";
 import IncomeOnInterestRateBarChart from "./components/Graphs/IncomeOnInterestRateBarChart";
 import SomethingLineChart from "./components/Graphs/SomethingLineChart";
-import {NewsList} from "./components/NewsList/NewsList";
-import {Icon, Button, Ul} from "@dnb/eufemia";
-import {add_circled, add, bell} from "@dnb/eufemia/icons";
+import { NewsList } from "./components/NewsList/NewsList";
+import {Ul} from "@dnb/eufemia";
+import {add} from "@dnb/eufemia/icons";
 import {Modal} from "@dnb/eufemia/components";
+
+
 export default [
   {
     componentName: "Credit Manager",
-    componentClass: "credit-manager",
     component: (
-      <PictureComponent image={picture1} height="280px" width="430px" />
+      <PictureComponent
+        image={creditManagerPicture}
+        height="280px"
+        width="430px"
+      />
     ),
     isSelected: false,
   },
   {
-    componentName: "Income On Interest Rate",
+    componentName: "Income based on interest rate",
     componentClass: "interest-rate",
     component: <IncomeOnInterestRateBarChart />,
     isSelected: true,
@@ -39,14 +44,20 @@ export default [
   },
   {
     componentName: "News",
-    componentClass: "news-widget",
-    component: <div><NewsList/></div>,
+    //componentClass: "news-widget",
+    component: (
+      <div>
+        <NewsList />
+      </div>
+    ),
     isSelected: true,
   },
   {
     componentName: "Finsight",
     componentClass: "widget-6",
-    component: <PictureComponent image={finsightPicture} height="280px" width="330px" />,
+    component: (
+      <PictureComponent image={finsightPicture} height="280px" width="380px" />
+    ),
     isSelected: true,
   },
   {
