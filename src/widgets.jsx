@@ -17,7 +17,7 @@ export default [
     isSelected: false,
   },
   {
-    componentName: "Income On Interest Rate",
+    componentName: "Income based on interest rate",
     componentClass: "interest-rate",
     component: <IncomeOnInterestRateBarChart />,
     isSelected: true,
