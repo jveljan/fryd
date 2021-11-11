@@ -6,7 +6,9 @@ import SomethingLineChart from "./components/Graphs/SomethingLineChart";
 export default [
   {
     componentName: "Credit Manager",
-    component: <PictureComponent image={picture1} />,
+    component: (
+      <PictureComponent image={picture1} height="280px" width="430px" />
+    ),
     isSelected: true,
   },
   {
