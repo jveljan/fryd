@@ -28,24 +28,26 @@ function App() {
       <div className="main">
         <Section style_type="white">
           <Header />
-          <Heading top="2" bottom="0">
-            FRYD Dashboard
-          </Heading>
-          <div className="settings-container">
-            <DashboardSettings
-              components={settings}
-              onSubmit={(items) => {
-                setRealList(
-                  items
-                    .map((it, idx) => {
-                      widges[idx].isSelected = it.isSelected;
-                      return widges[idx];
-                    })
-                    .filter((x) => x.isSelected)
-                    .map((x) => x.component)
-                );
-              }}
-            />
+          <div className="headingLine">
+            <Heading top="2" bottom="0">
+              FRYD Dashboard
+            </Heading>
+            <div className="settings-container">
+              <DashboardSettings
+                components={settings}
+                onSubmit={(items) => {
+                  setRealList(
+                    items
+                      .map((it, idx) => {
+                        widges[idx].isSelected = it.isSelected;
+                        return widges[idx];
+                      })
+                      .filter((x) => x.isSelected)
+                      .map((x) => x.component)
+                  );
+                }}
+              />
+            </div>
           </div>
         </Section>
 

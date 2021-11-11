@@ -5,11 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-lavender)
+  background-color: var(--color-lavender);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .App {
@@ -46,6 +47,7 @@ code {
   align-items: flex-end;
   flex-direction: column;
   padding-bottom: 1.5rem;
+  margin-top: 2rem;
 }
 
 .dnb-section {
