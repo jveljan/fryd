@@ -31,4 +31,9 @@ export default [
     component: <div>Widget 5</div>,
     isSelected: true,
   },
+  {
+    componentName: "Widget 6",
+    component: <div>Widget 6</div>,
+    isSelected: true,
+  },
 ];

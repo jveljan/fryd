@@ -7,7 +7,11 @@ import { useState } from "react";
 import widges from "./widgets";
 
 function App() {
-  const [realList, setRealList] = useState(widges.map((x) => x.component));
+  const widgetToComponentStructure = (x) => ({
+    component: x.component,
+    title: x.componentName
+  });
+  const [realList, setRealList] = useState(widges.map(widgetToComponentStructure));
 
   const [settings, setSettings] = useState(
     widges.map((x) => ({
@@ -36,7 +40,7 @@ function App() {
                         return widges[idx];
                       })
                       .filter((x) => x.isSelected)
-                      .map((x) => x.component)
+                      .map(widgetToComponentStructure)
                   );
                 }}
               />
