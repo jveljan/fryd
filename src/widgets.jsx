@@ -44,7 +44,7 @@ export default [
   },
   {
     componentName: "News",
-    //componentClass: "news-widget",
+    componentClass: "news-widget",
     component: (
       <div>
         <NewsList />
