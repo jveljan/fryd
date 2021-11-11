@@ -1,8 +1,9 @@
 import "./App.scss";
 import ComponentFrame from "./components/componentFrame/ComponentFrame";
 import Header from "./components/header/Header/Header";
-import {Heading, Section} from "@dnb/eufemia/components";
-import {DashboardSettings} from "./components/DashboardSettings/DashboardSettings";
+import { Heading, Section } from "@dnb/eufemia/components";
+import { DashboardSettings } from "./components/DashboardSettings/DashboardSettings";
+import PictureComponent from "./components/pictureComponent/PictureComponent";
 import Bloomberg from "./components/Bloomberg";
 import Ocean from "./components/Ocean/Ocean";
 import {NewsList} from "./components/NewsList/NewsList";
@@ -39,7 +40,7 @@ function App() {
                 </div>
             </div>
         </div>
-    );
+  );
 }
 
 export default App;
