@@ -48,7 +48,7 @@ code {
 .settings-container {
   display: flex;
   align-items: flex-end;
-  flex-direction: column;
+  flex-direction: row;
   padding-bottom: 1.5rem;
   margin-top: 2rem;
 }
