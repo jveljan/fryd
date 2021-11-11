@@ -45,9 +45,9 @@ function App() {
                 >
                     <div>
                         <Ul>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
+                            <li>Breach of covenants</li>
+                            <li>Balance alert</li>
+                            <li>Due invoice</li>
                         </Ul>
                     </div>
                 </Modal>
