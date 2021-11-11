@@ -11,7 +11,6 @@ const Header = () => {
     <Router>
       <header className={styles.dnbHeader}>
         <MenuButton
-          text="Menu"
           icon={hamburger_medium}
           on_click={() => {
             console.log("Click");
