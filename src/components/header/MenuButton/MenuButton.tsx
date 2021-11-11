@@ -34,7 +34,8 @@ const MenuButton = ({ text, badge, icon, ...props }: MenuButtonProps) => (
   <Button
     className={styles.dnbMenuButton}
     variant="tertiary"
-    icon_position="left"
+    icon_position="top"
+    size="large"
     icon={<IconGroup badge={badge} icon={icon} />}
     {...props}
   >
