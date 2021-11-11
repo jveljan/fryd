@@ -7,9 +7,9 @@ import PictureComponent from "./components/pictureComponent/PictureComponent";
 import Bloomberg from "./components/Bloomberg";
 import Ocean from "./components/Ocean/Ocean";
 import image1 from "./assets/picture1.png";
+import { NewsList } from "./components/NewsList/NewsList";
 
 function App() {
-  console.log(image1);
   const realList = [
     {
       componentName: "",
