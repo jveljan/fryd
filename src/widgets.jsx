@@ -1,7 +1,7 @@
 import PictureComponent from "./components/pictureComponent/PictureComponent";
-import picture1 from './assets/picture1.png';
 import indexesPicture from "./assets/indexes.png";
-import finsightPicture from './assets/finsight.png'
+import finsightPicture from './assets/finsight.png';
+import creditManagerPicture from './assets/creditmanager.png'
 import IncomeOnInterestRateBarChart from "./components/Graphs/IncomeOnInterestRateBarChart";
 import SomethingLineChart from "./components/Graphs/SomethingLineChart";
 import {NewsList} from "./components/NewsList/NewsList";
@@ -10,9 +10,8 @@ import { add_circled } from "@dnb/eufemia/icons";
 export default [
   {
     componentName: "Credit Manager",
-    componentClass: "credit-manager",
     component: (
-      <PictureComponent image={picture1} height="280px" width="430px" />
+      <PictureComponent image={creditManagerPicture} height="280px" width="430px" />
     ),
     isSelected: false,
   },
