@@ -1,16 +1,18 @@
+import PictureComponent from "./components/pictureComponent/PictureComponent";
+import picture1 from './assets/picture1.png';
+import Ocean from "./components/Ocean/Ocean";
+
 export default [
     {
-      componentName: "Widget 1",
+      componentName: "Credit Manager",
       component: (
-        <div>
-          Widget 1
-        </div>
+        <PictureComponent image={picture1} />
       ),
       isSelected: true,
     },
     {
-      componentName: "Widget 2",
-      component: <div>Widget 2</div>,
+      componentName: "Graphs",
+      component: <Ocean />,
       isSelected: true,
     },
     {
@@ -25,7 +27,7 @@ export default [
     },
     {
       componentName: "Widget 5",
-      component: <div>Widget 6</div>,
+      component: <div>Widget 5</div>,
       isSelected: true,
     },
   ];
