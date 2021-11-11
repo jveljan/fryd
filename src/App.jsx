@@ -5,6 +5,7 @@ import {Heading, Section} from "@dnb/eufemia/components";
 import { DashboardSettings } from './components/DashboardSettings/DashboardSettings'
 import Bloomberg from "./components/Bloomberg";
 import Ocean from "./components/Ocean/Ocean";
+import {NewsList} from "./components/NewsList/NewsList";
 
 function App() {
   const realList = [
@@ -34,7 +35,7 @@ function App() {
     },
     {
       componentName: "",
-      component: <div>Widget 6</div>,
+      component: <div><NewsList/></div>,
       isSelected: true,
     },
   ];
