@@ -15,7 +15,7 @@ const SomethingLineChart = () => {
   const [value, setvalue] = useState(7);
   
   const data = {
-    labels: ['1', '2', '3', '4', '5'],
+    labels: ["mon", "tue", "wed", "thu", "fri"],
     datasets: [
       {
         label: 'exchange rate',
@@ -30,9 +30,9 @@ const SomethingLineChart = () => {
   return <div className="lineGraphContainer">
 
   <Slider
-  min={30}
-  max={1200}
-  step={100}
+  min={1}
+  max={10}
+  step={1}
   value={value}
   on_change={({ value }) => setvalue(value)}
 />

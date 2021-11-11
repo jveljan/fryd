@@ -1,10 +1,12 @@
 import PictureComponent from "./components/pictureComponent/PictureComponent";
 import picture1 from './assets/picture1.png';
 import indexesPicture from "./assets/indexes.png";
+import finsightPicture from './assets/finsight.png'
 import IncomeOnInterestRateBarChart from "./components/Graphs/IncomeOnInterestRateBarChart";
 import SomethingLineChart from "./components/Graphs/SomethingLineChart";
 import {NewsList} from "./components/NewsList/NewsList";
-
+import { Icon } from "@dnb/eufemia";
+import { add_circled } from "@dnb/eufemia/icons";
 export default [
   {
     componentName: "Credit Manager",
@@ -12,7 +14,7 @@ export default [
     component: (
       <PictureComponent image={picture1} height="280px" width="430px" />
     ),
-    isSelected: true,
+    isSelected: false,
   },
   {
     componentName: "Income On Interest Rate",
@@ -41,9 +43,15 @@ export default [
     isSelected: true,
   },
   {
-    componentName: "Widget 6",
+    componentName: "Finsight",
     componentClass: "widget-6",
-    component: <div>Widget 6</div>,
+    component: <PictureComponent image={finsightPicture} height="280px" width="330px" />,
     isSelected: true,
+  },
+  {
+    componentName: "Add new widget",
+    component: <Icon top="4rem" icon={add_circled} size="150" />,
+    isSelected: true,
+    settingsHidden: true
   },
 ];

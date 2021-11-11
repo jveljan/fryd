@@ -34,7 +34,7 @@ const IncomeOnInterestRateBarChart = () => {
   };
 
   return (
-    <div className="barGraphContainer">
+    <div className="barGraphContainer" style={{marginTop: '40px'}}>
       <div className="verticalSliderContainer">
         <Slider
           min={10000000}
