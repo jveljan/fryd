@@ -1,6 +1,5 @@
 import PictureComponent from "./components/pictureComponent/PictureComponent";
 import picture1 from "./assets/picture1.png";
-import Ocean from "./components/Ocean/Ocean";
 
 export default [
   {
@@ -11,8 +10,8 @@ export default [
     isSelected: true,
   },
   {
-    componentName: "Graphs",
-    component: <Ocean />,
+    componentName: "Widget 2",
+    component: <div>Widget 2</div>,
     isSelected: true,
   },
   {
