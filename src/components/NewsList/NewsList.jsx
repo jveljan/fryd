@@ -58,8 +58,6 @@ export const NewsList = () => {
 
     return (
         <div>
-            <H2 bottom="2" style={{textAlign: 'left'}}>News</H2>
-
             <Tabs
                 data={{
                     first: {

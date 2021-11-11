@@ -18,7 +18,7 @@ const IncomeOnInterestRateBarChart = () => {
     labels: ['mon', 'tue', 'wed', 'thu', 'fri'],
     datasets: [
       {
-        label: 'Income forecast based on interest rate',
+        label: 'interest rate',
         data: [Math.floor(Math.random() * value), Math.floor(Math.random() * value), Math.floor(Math.random() * value), Math.floor(Math.random() * value), Math.floor(Math.random() * value), Math.floor(Math.random() * value)],
         fill: false,
         backgroundColor: 'rgb(255, 99, 132)',

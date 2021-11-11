@@ -21,7 +21,7 @@ export default [
     isSelected: true,
   },
   {
-    componentName: "Something Line Chart",
+    componentName: "Exchange Rate",
     componentClass: "line-chart",
     component: <SomethingLineChart />,
     isSelected: true,

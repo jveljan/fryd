@@ -18,7 +18,7 @@ const SomethingLineChart = () => {
     labels: ['1', '2', '3', '4', '5'],
     datasets: [
       {
-        label: 'Something Line Chart',
+        label: 'exchange rate',
         data: [Math.floor(Math.random() * value), Math.floor(Math.random() * value), Math.floor(Math.random() * value), Math.floor(Math.random() * value), Math.floor(Math.random() * value), Math.floor(Math.random() * value)],
         fill: false,
         backgroundColor: 'rgb(0, 0, 128)',
