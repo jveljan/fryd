@@ -6,54 +6,13 @@ import {DashboardSettings} from "./components/DashboardSettings/DashboardSetting
 import Bloomberg from "./components/Bloomberg";
 import Ocean from "./components/Ocean/Ocean";
 import {NewsList} from "./components/NewsList/NewsList";
+import { useState } from "react";
+import widges from './widgets'
 
 function App() {
-    const realList = [
-        {
-            componentName: "",
-            component: (
-                <div>
-                    <Ocean/>
-                </div>
-            ),
-            isSelected: true,
-        },
-        {
-            componentName: "",
-            component: <div>Widget 2</div>,
-            isSelected: true,
-        },
-        {
-            componentName: "",
-            component: <div>Widget 3</div>,
-            isSelected: true,
-        },
-        {
-            componentName: "",
-            component: <div>Widget 4</div>,
-            isSelected: true,
-        },
-        {
-            componentName: "",
-            component: <div><NewsList/></div>,
-            isSelected: true,
-        },
-    ];
+    const [realList, setRealList] = useState(widges.map(x => x.component));
 
-    const settings = [
-        {
-            componentName: "Setting 1",
-            isSelected: true,
-        },
-        {
-            componentName: "Setting 2",
-            isSelected: false,
-        },
-        {
-            componentName: "Setting 3",
-            isSelected: true,
-        },
-    ];
+    const [settings, setSettings] = useState(widges.map(x => ({componentName: x.componentName, isSelected: x.isSelected})));
 
     return (
         <div className="App dnb-space dnb-core-style">
@@ -64,16 +23,18 @@ function App() {
                         FRYD Dashboard
                     </Heading>
                     <div className="settings-container">
-                        <DashboardSettings components={settings} onSubmit={() => {
+                        <DashboardSettings components={settings} onSubmit={(items) => {
+                            setRealList(items.map((it, idx) => {
+                                widges[idx].isSelected = it.isSelected
+                                return widges[idx]
+                            }).filter(x=>x.isSelected).map(x => x.component))
                         }}/>
                     </div>
                 </Section>
 
                 <div className="box-container">
                     <ComponentFrame
-                        componentList={realList
-                            .filter((c) => c.isSelected)
-                            .map((c) => c.component)}
+                        componentList={realList}
                     />
                 </div>
             </div>

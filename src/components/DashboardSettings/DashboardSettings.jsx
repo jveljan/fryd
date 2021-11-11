@@ -2,6 +2,7 @@ import { Modal, Checkbox, Button } from "@dnb/eufemia/components";
 import { cog } from "@dnb/eufemia/icons";
 
 export const DashboardSettings = (props) => {
+  const items = props.components
   return (
     <Modal
       title={"Settings"}
@@ -13,14 +14,14 @@ export const DashboardSettings = (props) => {
     >
       {({ close }) => (
         <div>
-          {props.components.map((item) => {
+          {items.map((item) => {
             return (
               <div>
                 <Checkbox
                   label={item.componentName}
                   label_position="right"
                   checked={item.isSelected}
-                  on_change={({ checked }) => console.log(checked)}
+                  on_change={({ checked }) => item.isSelected = checked}
                   bottom="1"
                 />
               </div>
@@ -30,7 +31,7 @@ export const DashboardSettings = (props) => {
           <Button
             text="Save settings"
             on_click={() => {
-              props.onSubmit();
+              props.onSubmit(items);
               close();
             }}
             top="3"
