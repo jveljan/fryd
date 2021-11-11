@@ -12,7 +12,7 @@ function App() {
     title: x.componentName,
     className: x.componentClass
   });
-  const [realList, setRealList] = useState(widges.map(widgetToComponentStructure));
+  const [realList, setRealList] = useState(widges.filter((x) => x.isSelected).map(widgetToComponentStructure));
 
   const [settings, setSettings] = useState(
     widges.map((x) => ({
@@ -28,7 +28,7 @@ function App() {
           <Header />
           <div className="headingLine">
             <Heading top="2" bottom="0">
-              FRYD Dashboard
+              Hello, Åsmund!
             </Heading>
             <div className="settings-container">
               <DashboardSettings
