@@ -15,7 +15,7 @@ function App() {
   const [realList, setRealList] = useState(widges.filter((x) => x.isSelected).map(widgetToComponentStructure));
 
   const [settings, setSettings] = useState(
-    widges.map((x) => ({
+    widges.filter(x=>!x.settingsHidden).map((x) => ({
       componentName: x.componentName,
       isSelected: x.isSelected,
     }))

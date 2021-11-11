@@ -52,5 +52,6 @@ export default [
     componentName: "Add new widget",
     component: <Icon top="4rem" icon={add_circled} size="150" />,
     isSelected: true,
+    settingsHidden: true
   },
 ];
