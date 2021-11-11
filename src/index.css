@@ -8,8 +8,12 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.App {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .header {
@@ -21,10 +25,23 @@ code {
   padding: 1em;
 }
 .main {
+  /*border: solid lightseagreen 2px;*/
   min-height: 600px;
   padding: 5px;
 }
 .box-container {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.dnb-heading {
+  text-align: left;
+}
+
+.settings-container {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
 }
