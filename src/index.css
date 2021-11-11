@@ -5,11 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-lavender)
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.App {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .header {
@@ -20,11 +25,29 @@ code {
   font-size: 1.3em;
   padding: 1em;
 }
+
 .main {
-  min-height: 600px;
-  padding: 5px;
+  min-height: 100vh;
+  padding: 0;
 }
+
 .box-container {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.dnb-heading {
+  text-align: left;
+}
+
+.settings-container {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+
+.dnb-section {
+  z-index: 1;
 }

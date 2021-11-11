@@ -2,9 +2,10 @@
   margin: 4rem 8rem 4rem 8rem;
   margin: 5px auto;
   background: white;
-  height: auto;
-  width: auto;
-  border: solid green 1px;
+  height: 300px;
+  width: 450px;
+  border: 1px solid rgb(0 0 0 / 20%);
+  box-shadow: rgb(0 0 0 / 20%) 0 0 4px;
   border-radius: 5px;
   color: black;
   padding: 5px;
