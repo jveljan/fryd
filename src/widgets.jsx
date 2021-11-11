@@ -1,5 +1,6 @@
 import PictureComponent from "./components/pictureComponent/PictureComponent";
 import picture1 from "./assets/picture1.png";
+import {NewsList} from "./components/NewsList/NewsList";
 
 export default [
   {
@@ -25,8 +26,8 @@ export default [
     isSelected: true,
   },
   {
-    componentName: "Widget 5",
-    component: <div>Widget 5</div>,
+    componentName: "news-widget",
+    component: <div><NewsList/></div>,
     isSelected: true,
   },
 ];
