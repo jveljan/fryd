@@ -1,5 +1,6 @@
 import PictureComponent from "./components/pictureComponent/PictureComponent";
 import picture1 from "./assets/picture1.png";
+import indexesPicture from "./assets/indexes.png";
 import IncomeOnInterestRateBarChart from "./components/Graphs/IncomeOnInterestRateBarChart";
 import SomethingLineChart from "./components/Graphs/SomethingLineChart";
 
@@ -22,8 +23,10 @@ export default [
     isSelected: true,
   },
   {
-    componentName: "Widget 4",
-    component: <div>Widget 4</div>,
+    componentName: "Index overview",
+    component: (
+      <PictureComponent image={indexesPicture} height="280px" width="330px" />
+    ),
     isSelected: true,
   },
   {
