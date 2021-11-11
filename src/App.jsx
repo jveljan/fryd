@@ -5,8 +5,8 @@ import { Heading, Section } from "@dnb/eufemia/components";
 import { DashboardSettings } from "./components/DashboardSettings/DashboardSettings";
 import PictureComponent from "./components/pictureComponent/PictureComponent";
 import Bloomberg from "./components/Bloomberg";
-import Ocean from "./components/Ocean/Ocean";
 import {NewsList} from "./components/NewsList/NewsList";
+
 import { useState } from "react";
 import widges from './widgets'
 

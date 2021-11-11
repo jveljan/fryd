@@ -1,6 +1,7 @@
 import PictureComponent from "./components/pictureComponent/PictureComponent";
 import picture1 from './assets/picture1.png';
-import Ocean from "./components/Ocean/Ocean";
+import IncomeOnInterestRateBarChart from "./components/Graphs/IncomeOnInterestRateBarChart";
+import SomethingLineChart from "./components/Graphs/SomethingLineChart";
 
 export default [
     {
@@ -11,13 +12,13 @@ export default [
       isSelected: true,
     },
     {
-      componentName: "Graphs",
-      component: <Ocean />,
+      componentName: "Income On Interest Rate",
+      component: <IncomeOnInterestRateBarChart />,
       isSelected: true,
     },
     {
-      componentName: "Widget 3",
-      component: <div>Widget 3</div>,
+      componentName: "Something Line Chart",
+      component: <SomethingLineChart/>,
       isSelected: true,
     },
     {
