@@ -1,9 +1,11 @@
 import PictureComponent from "./components/pictureComponent/PictureComponent";
-import picture1 from './assets/picture1.png';
+import picture1 from "./assets/picture1.png";
 import indexesPicture from "./assets/indexes.png";
 import IncomeOnInterestRateBarChart from "./components/Graphs/IncomeOnInterestRateBarChart";
 import SomethingLineChart from "./components/Graphs/SomethingLineChart";
-import {NewsList} from "./components/NewsList/NewsList";
+import { NewsList } from "./components/NewsList/NewsList";
+import { Icon } from "@dnb/eufemia";
+import { add_circled } from "@dnb/eufemia/icons";
 
 export default [
   {
@@ -37,13 +39,22 @@ export default [
   {
     componentName: "News",
     componentClass: "news-widget",
-    component: <div><NewsList/></div>,
+    component: (
+      <div>
+        <NewsList />
+      </div>
+    ),
     isSelected: true,
   },
   {
     componentName: "Widget 6",
     componentClass: "widget-6",
     component: <div>Widget 6</div>,
+    isSelected: true,
+  },
+  {
+    componentName: "Add new widget",
+    component: <Icon top="4rem" icon={add_circled} size="150" />,
     isSelected: true,
   },
 ];
