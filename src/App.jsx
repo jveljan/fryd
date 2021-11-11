@@ -3,13 +3,6 @@ import ComponentFrame from "./components/componentFrame/ComponentFrame";
 import Header from "./components/header/Header/Header";
 import { Heading, Section } from "@dnb/eufemia/components";
 import { DashboardSettings } from "./components/DashboardSettings/DashboardSettings";
-<<<<<<< HEAD
-import PictureComponent from "./components/pictureComponent/PictureComponent";
-import Bloomberg from "./components/Bloomberg";
-import {NewsList} from "./components/NewsList/NewsList";
-
-=======
->>>>>>> 50405fe91f72d55a5ffa54480a0c20701322114c
 import { useState } from "react";
 import widges from "./widgets";
 
