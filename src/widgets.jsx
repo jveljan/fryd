@@ -5,8 +5,9 @@ import finsightPicture from './assets/finsight.png'
 import IncomeOnInterestRateBarChart from "./components/Graphs/IncomeOnInterestRateBarChart";
 import SomethingLineChart from "./components/Graphs/SomethingLineChart";
 import {NewsList} from "./components/NewsList/NewsList";
-import { Icon } from "@dnb/eufemia";
-import { add_circled } from "@dnb/eufemia/icons";
+import {Icon, Button, Ul} from "@dnb/eufemia";
+import {add_circled, add, bell} from "@dnb/eufemia/icons";
+import {Modal} from "@dnb/eufemia/components";
 export default [
   {
     componentName: "Credit Manager",
@@ -49,8 +50,30 @@ export default [
     isSelected: true,
   },
   {
-    componentName: "Add new widget",
-    component: <Icon top="4rem" icon={add_circled} size="150" />,
+    componentName: "",
+    componentClass: "add-new-widget",
+    component: <div>
+      <Modal
+          title={"Explore widgets"}
+          close_button_attributes={{ text: "Close" }}
+          mode="drawer"
+          right="1"
+          trigger_variant="tertiary"
+          trigger_text="Explore widgets"
+          trigger_icon={add}
+          trigger_icon_position="top"
+          trigger_icon_size="large"
+          trigger_size="large"
+      >
+        <div>
+          <Ul>
+            <li>Widget 1</li>
+            <li>Widget 2</li>
+            <li>Widget 3</li>
+          </Ul>
+        </div>
+      </Modal>
+    </div>,
     isSelected: true,
     settingsHidden: true
   },

@@ -14,7 +14,7 @@ export const DashboardSettings = (props) => {
     >
       {({ close }) => (
         <div>
-          {items.map((item) => {
+          {items.filter(x=>!x.settingsHidden).map((item) => {
             return (
               <div key={item.componentName}>
                 <Switch

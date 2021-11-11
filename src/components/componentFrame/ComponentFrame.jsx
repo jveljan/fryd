@@ -5,7 +5,7 @@ const ComponentFrame = ({ componentList }) => {
     <>
       {componentList.map((c) => (
         <div className={styles.componentWrapper + ' ' + c.className} key={c.title}>
-          <H2>{c.title}</H2>
+          <H2 bottom="1">{c.title}</H2>
           {c.component}
         </div>
       ))}

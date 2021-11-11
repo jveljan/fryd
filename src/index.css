@@ -72,3 +72,12 @@ code {
   grid-row-end: span 1;
   overflow: hidden;
 }
+
+.add-new-widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
