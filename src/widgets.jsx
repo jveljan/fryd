@@ -1,4 +1,5 @@
 import PictureComponent from "./components/pictureComponent/PictureComponent";
+<<<<<<< HEAD
 import picture1 from './assets/picture1.png';
 import IncomeOnInterestRateBarChart from "./components/Graphs/IncomeOnInterestRateBarChart";
 import SomethingLineChart from "./components/Graphs/SomethingLineChart";
@@ -32,3 +33,36 @@ export default [
       isSelected: true,
     },
   ];
+=======
+import picture1 from "./assets/picture1.png";
+
+export default [
+  {
+    componentName: "Credit Manager",
+    component: (
+      <PictureComponent image={picture1} height="280px" width="430px" />
+    ),
+    isSelected: true,
+  },
+  {
+    componentName: "Widget 2",
+    component: <div>Widget 2</div>,
+    isSelected: true,
+  },
+  {
+    componentName: "Widget 3",
+    component: <div>Widget 3</div>,
+    isSelected: true,
+  },
+  {
+    componentName: "Widget 4",
+    component: <div>Widget 4</div>,
+    isSelected: true,
+  },
+  {
+    componentName: "Widget 5",
+    component: <div>Widget 5</div>,
+    isSelected: true,
+  },
+];
+>>>>>>> 50405fe91f72d55a5ffa54480a0c20701322114c
